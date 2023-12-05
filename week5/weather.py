@@ -90,7 +90,7 @@ class APICallingService(AbstractDataService):
         air_quality_payload = {
             'lat': payload.get('latitude'),
             'lon': payload.get('longitude'),
-            'appid': '3b94f08daa79eff0bb70f61127ac83ba'  # Replace with your API key
+            'appid': '########################'  # Replace with your API key
         }
         r = requests.get("https://api.openweathermap.org/data/2.5/air_pollution", params=air_quality_payload)
         json_air_data = r.json()
